@@ -14,13 +14,14 @@
 #define _BT_SEL_KEYS_                                                          \
       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 
-#define ___ &trans
+#define DEF 0
+#define NAV 1
+#define FN 2
+#define NUM 3
+#define SYS 4
+#define MOUSE 5
 
-/ {
-    chosen {
-        zmk,physical-layout = &default_layout;
-    };
-};
+#define ___ &trans
 
 #ifndef ZMK_BASE_LAYER
   #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                 \
@@ -98,3 +99,9 @@ ZMK_BASE_LAYER(Mouse,
                                               ___           ___           ___         ,                               ___           ___           ___
 //                                          ╰─────────────┴─────────────┴─────────────╯                             ╰─────────────┴─────────────┴─────────────╯
 )
+
+/ {
+    chosen {
+        zmk,physical-layout = &default_layout;
+    };
+};
