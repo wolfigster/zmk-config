@@ -1,5 +1,10 @@
 manifest:
+  defaults:
+    remote: urob
+
   remotes:
+    - name: urob
+      url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
@@ -9,5 +14,8 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    - name: zmk-helpers
+      path: modules/zmk/helpers
+      revision: main
   self:
     path: config
