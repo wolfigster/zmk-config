@@ -92,9 +92,6 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 #define CANCEL    &kp K_CANCEL            // Cancel caps-word & auto-layers.
 #define DSK_PREV  &hmr LCTRL LG(LC(LEFT)) // Previous desktop.
 #define DSK_NEXT  &hmr LALT LG(LC(RIGHT)) // Next     desktop.
-#define PIN_WIN   &kp LG(LC(LS(Q)))       // Pin window across desktops.
-#define PIN_APP   &kp LG(LC(LS(A)))       // Pin application across desktops.
-#define DSK_MGR   &kp LA(GRAVE)           // Desktop manager.
 #define VOL_DOWN  &hmr RSHFT C_VOL_DN
 
 /* Keymap layers */
@@ -134,9 +131,9 @@ ZMK_BASE_LAYER(Fn,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___           &hml LGUI F11 &hml LALT F4  &hml LSHFT F5 &hml LCTRL F6 ___           ___         ,   ___           ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___           ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           &kp F10       &kp F1        &kp F2        &kp F3        ___         ,                               PIN_APP       PIN_WIN       DSK_MGR       ___           ___           ___         ,
+    ___           &kp F10       &kp F1        &kp F2        &kp F3        ___         ,                               ___           ___           &kp C_MUTE    ___           ___           ___         ,
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤                             ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              ___           ___           ___         ,                               &kp C_MUTE    &kp C_PP      ___
+                                              ___           ___           ___         ,                               ___           ___           ___
 //                                          ╰─────────────┴─────────────┴─────────────╯                             ╰─────────────┴─────────────┴─────────────╯
 )
 
