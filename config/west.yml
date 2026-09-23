@@ -17,5 +17,8 @@ manifest:
     - name: zmk-helpers
       path: modules/zmk/helpers
       revision: main
+    - name: zmk-auto-layer
+      path: modules/zmk/auto-layer
+      revision: main
   self:
     path: config
