@@ -12,20 +12,20 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: 641514a97db345f499dd50b0360e594270f008fe # main (2026-08-31)
       import: app/west.yml
 
     - name: zmk-adaptive-key
       path: modules/zmk/adaptive-key
-      revision: main
+      revision: e5b335a7b1076cb122582f5a892b118b02a3be34 # main (2026-08-18)
     - name: zmk-auto-layer
       path: modules/zmk/auto-layer
-      revision: main
+      revision: 62c201934711369d50a28df12e1d055d05cb6460 # main (2026-08-18)
     - name: zmk-helpers
       path: modules/zmk/helpers
-      revision: main
+      revision: 95edb8f15ef1d1bd8332810555f8cf5837fbdd27 # main (2026-08-31)
     - name: zmk-tri-state
       path: modules/zmk/tri-state
-      revision: main
+      revision: 0c6eaf55d2da0d85b943e02d72831c2d8ea64501 # main (2026-08-31)
   self:
     path: config
