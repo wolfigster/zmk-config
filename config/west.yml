@@ -14,11 +14,15 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: zmk-helpers
-      path: modules/zmk/helpers
+
+    - name: zmk-adaptive-key
+      path: modules/zmk/adaptive-key
       revision: main
     - name: zmk-auto-layer
       path: modules/zmk/auto-layer
+      revision: main
+    - name: zmk-helpers
+      path: modules/zmk/helpers
       revision: main
   self:
     path: config
