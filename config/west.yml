@@ -16,12 +16,12 @@ manifest:
       import: app/west.yml
     - name: zmk-auto-layer
       path: modules/zmk/auto-layer
-      revision: main
+      revision: v0.3
     - name: zmk-helpers
       path: modules/zmk/helpers
-      revision: main
+      revision: v0.3
     - name: zmk-tri-state
       path: modules/zmk/tri-state
-      revision: main
+      revision: v0.3
   self:
     path: config
