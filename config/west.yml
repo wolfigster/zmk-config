@@ -23,6 +23,9 @@ manifest:
     - name: zmk-helpers
       path: modules/zmk/helpers
       revision: v0.3
+    - name: zmk-leader-key
+      path: modules/zmk/leader-key
+      revision: v0.3
     - name: zmk-tri-state
       path: modules/zmk/tri-state
       revision: v0.3
