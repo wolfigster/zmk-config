@@ -26,5 +26,8 @@ manifest:
     - name: zmk-tri-state
       path: modules/zmk/tri-state
       revision: v0.3
+    - name: zmk-unicode
+      path: modules/zmk/unicode
+      revision: v0.3
   self:
     path: config
